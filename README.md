@@ -71,8 +71,8 @@ addresses it registered, the access you allowed, when you connected it and when 
 and hashes of its tokens.
 
 The plugin adds no service of its own. How notdocs handles your documents, its index and the
-providers it uses is in its [privacy policy](https://notdocs.dev/legal/privacy), under "Connected
-apps".
+providers it uses is in its [privacy policy](https://notdocs.dev/legal/privacy); what it keeps
+about a connection is under "Connected apps" there.
 
 To disconnect, open Settings › Connected apps in notdocs, which ends the app's access at once, or
 remove the connector in Claude.

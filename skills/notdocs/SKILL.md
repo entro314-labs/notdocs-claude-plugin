@@ -56,6 +56,10 @@ write.
    - `text` is the whole file, frontmatter included, and is what is written when it is given.
 3. A save that changes nothing writes nothing.
 
+`visibility` in a document's frontmatter (`private`, `link` or `public`) sets who may read it
+without signing in. Never add, change or drop that key unless the person asked, and carry it over
+when you send `frontmatter`. `docs_visibility` says what a document is served as, and where.
+
 Change only what the person asked to change. After a write, say in one line what changed and
 where; do not paste the tool's result.
 

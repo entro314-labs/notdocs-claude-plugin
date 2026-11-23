@@ -43,8 +43,9 @@ The feed is read by cursor. Neither tool takes a date.
 
 **The history of one document**: `changes_tail` with its `docId`.
 
-Pass `branch` to read one branch. Left out, the feed tools return events from every branch of the
-project, and each event names its own.
+Left out, `branch` makes the feed tools return events from every branch of the project, each
+event naming its own. Pass the project's `defaultBranch` from `projects_list`, unless the person
+asked about another branch or about all of them.
 
 ## Read what the changes were
 
@@ -66,12 +67,14 @@ care about and list the rest by path.
   words. Name the sections when you have them.
 - **New**: the documents created, with their type.
 - **Moved or deleted**: old path and new path, or the path that went.
-- Use the document's title and path. Say who by `actorName`; an event without one has no known
-  actor.
+- Events carry a `path` and a `docId`, and no title or type. One `docs_list` call gives both for
+  every document on the branch; a deleted document has only its path.
+- Say who by `actorName`; an event without one has no known actor.
 - Report what the feed and the documents show. Do not guess at why a change was made.
 
 Both feed tools return a `cursor`, the point `changes_since` continues from. End the digest with
-the one from your newest read, so the next digest can start there: "Next time, ask for changes
+the latest one, so the next digest can start there: after `changes_tail` that is the cursor of the
+first page you read, after `changes_since` the cursor of the last. "Next time, ask for changes
 since cursor 482."
 
 ## If the feed is long

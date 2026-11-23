@@ -40,9 +40,10 @@ create them once they agree.
 
 For each task call `docs_create` with:
 
-1. `template`: "task". It sets the type and a `status` of `todo`.
-2. `path`: `docs/tasks/<slug>.md` unless the person named another folder. New documents end in
-   `.md`.
+1. `template`: "task". The built-in one sets the type and a `status` of `todo`; a repository can
+   replace it with its own of the same name, which `templates_list` shows.
+2. `path`: `<docs root>/tasks/<slug>.md`, which is `docs/tasks/<slug>.md` by default, unless the
+   person named another folder. New documents end in `.md`.
 3. `title`: the short imperative title.
 4. `body`: the text of the document. A `body` you send replaces the template's, so write all of
    it:
