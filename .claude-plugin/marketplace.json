@@ -1,0 +1,14 @@
+{
+  "name": "notdocs",
+  "owner": { "name": "notdocs", "url": "https://notdocs.dev" },
+  "metadata": {
+    "description": "The notdocs plugin for Claude."
+  },
+  "plugins": [
+    {
+      "name": "notdocs",
+      "source": "./",
+      "description": "Read, write and review the markdown documents in your notdocs workspace: tasks from a spec, comment threads, what changed, and checks of links, markdown and frontmatter, through the notdocs connector."
+    }
+  ]
+}
