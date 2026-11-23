@@ -89,4 +89,4 @@ Documentation: [notdocs.dev/agents](https://notdocs.dev/agents). Write to suppor
 
 ## License
 
-MIT. See [LICENSE](LICENSE).
+LGPL-3.0-only. See [LICENSE](LICENSE) for the GNU Lesser General Public License, version 3, and [COPYING](COPYING) for the GNU General Public License it builds on.

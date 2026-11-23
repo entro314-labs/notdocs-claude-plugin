@@ -5,7 +5,7 @@
   "description": "Read, write and review the markdown documents in your notdocs workspace from a conversation with Claude: draft task documents from a spec, work through comment threads, see what changed since a point, and check links, markdown and frontmatter.",
   "author": { "name": "notdocs", "url": "https://notdocs.dev" },
   "homepage": "https://notdocs.dev",
-  "license": "MIT",
+  "license": "LGPL-3.0-only",
   "privacyPolicyUrl": "https://notdocs.dev/legal/privacy",
   "documentationUrl": "https://notdocs.dev/agents",
   "supportUrl": "https://notdocs.dev/contact",
